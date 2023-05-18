@@ -5,12 +5,16 @@
 
 class Animal
     def speak
-      # Your code here
+      puts "Animal Speaks!"
     end
 end
   
 class Dog < Animal
 # Your code here
+  def speak
+    puts "Dog Barks!"
+  end
+
 end
 
 # Example usage
@@ -19,4 +23,3 @@ animal.speak # Expected output: "Animal speaks!"
 
 dog = Dog.new
 dog.speak # Expected output: "Dog barks!"
-  

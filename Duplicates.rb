@@ -4,7 +4,18 @@
 =end
 
 def find_duplicates(arr)
-    # Your code here
+    duplicates = []
+  count = Hash.new(0)
+
+  # Count the occurrences of each element
+  arr.each { |element| count[element] += 1 }
+
+  # Add elements with count greater than 1 to the duplicates array
+  count.each do |element, frequency|
+    duplicates << element if frequency > 1
+  end
+
+  duplicates
 end
   
 # Example usage

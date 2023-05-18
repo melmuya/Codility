@@ -4,11 +4,14 @@
 =end
 
 def sum_hash_values(hash)
-    # Your code here
-end
+    sum = 0
+    hash.each_value { |value| sum += value }
+    sum
+  end
   
-# Example usage
-input = { a: 1, b: 2, c: 3, d: 4 }
-output = sum_hash_values(input)
-puts output # Expected output: 10
+  # Example usage
+  input = { a: 1, b: 2, c: 3, d: 4 }
+  output = sum_hash_values(input)
+  puts output # Expected output: 10
+  
   

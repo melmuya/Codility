@@ -3,14 +3,14 @@
     a and b as input and swaps their values.
 =end
 
-def variable_swap(a, b)
+def variable_swap(arr)
     # Your code here
+    arr[0], arr[1]=arr[1], arr[0]
 end
-  
 # Example usage
-a = 5
-b = 10
-variable_swap(a, b)
-puts a # Expected output: 10
-puts b # Expected output: 5
+
+arr=[5,10]
+ variable_swap(arr)
+puts arr[0] # Expected output: 10
+puts arr[1]# Expected output: 5
   
